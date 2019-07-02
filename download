@@ -48,20 +48,20 @@ clear
 echo -e $red "MENGHUBUNGKAN..."
 sleep 0.25        
 }
-#Sky Banner 
+#Sky  
 sky(){
-    echo -e $red"   _____ __         ____                      __                __         " 
-    sleep 0.26  
-    echo -e $blue"  / ___// /____  __/ __ \____ _      ______  / /___  ____ _____/ /__  _____"
+    echo -e "   _____ __         ____                      __                __         " | lolcat
     sleep 0.25
-    echo -e $green"  \__ \/ //_/ / / / / / / __ \ | /| / / __ \/ / __ \/ __ `/ __  / _ `/ ___/"
-    sleep 0.26
-    echo -e $purple" ___/ / ,< / /_/ / /_/ / /_/ / |/ |/ / / / / / /_/ / /_/ / /_/ /  __/ /"
-    sleep 0.25    
-    echo -e $cyan"/____/_/|_|\__, /_____/\____/|__/|__/_/ /_/_/\____/\__,_/\__,_/\___/_/"
-    sleep 0.25     
-    echo -e $cyan"          /____/                                                      "  
-    sleep 0.25   
+    echo -e "  / ___// /____  __/ __ \____ _      ______  / /___  ____ _____/ /__  _____" | lolcat
+    sleep 0.25
+    echo -e "  \__ \/ //_/ / / / / / / __ \ | /| / / __ \/ / __ \/ __ `/ __  / _ `/ ___/" | lolcat
+    sleep 0.25
+    echo -e " ___/ / ,< / /_/ / /_/ / /_/ / |/ |/ / / / / / /_/ / /_/ / /_/ /  __/ /" | lolcat 
+    sleep 0.25
+    echo -e "/____/_/|_|\__, /_____/\____/|__/|__/_/ /_/_/\____/\__,_/\__,_/\___/_/" | lolcat
+    sleep 0.25
+    echo -e "          /____/                                                      " | lolcat  
+    sleep 1
 }
 install
 echo ""
@@ -110,71 +110,71 @@ sleep 0.25
 echo -e $white"[#]-----------------------------[#]"
 sleep 0.25
 echo -e $green"[#] 0.Exit/Keluar               [#]"
-echo
-read -p "root@download:~#" mana;
-echo 
-if [ $mana = 1] [ $mana="1"]
-then
+echo -n -e "$red root$white@$blue/downloader$white:$red~$cyan # $nc"
+read -e lol
+case $lol in
+("1")
 load
 echo -e $cyan "MASUKKAN LINK foto/vidio Dari Instagram"
 read -p "Massukan:" kan
+sleep 1
 echo ""
 sleep 1
 load 
-curl -O $kan
-fi 
+curl -O $kan 
 echo 
-if [ $mana = 2] [ $mana="2"]
-then
+;;
+("2")
 load
 echo -e $cyan "MASUKKAN LINK foto/vidio Dari Facebook"
 read -p "Massukan:" nub
+sleep 1
 echo ""
 sleep 1
 load 
 curl -O $nub
 clear
-fi 
-echo     
-if [ $mana = 3 ] [ $mana="3"]
-then
+echo
+;;
+("3")
 load
 echo -e $cyan "MASUKKAN LINK foto/vidio"
 read -p "Massukan:" or
+sleep 1
 echo ""
 sleep 1
 load 
 curl -O $or
-clear
-fi 
+clear 
 echo 
-if [ $mana = 4 ] [ $mana="4"]
-then
+;;
+("4")
 load
 echo -e $cyan "MASUKKAN LINK foto/vidio Dari Youtube"
 read -p "Massukan:" nub
+sleep 1
 echo ""
 sleep 1
 load 
 curl -O $nub
 clear
-fi 
 echo 
-if [ $mana = 5] [ $mana="5" ]
-then
+;;
+("5")
 load
 echo -e $cyan "MASUKKAN LINK"
 read -p "Massukan:" fack
+sleep 1
 echo ""
 sleep 1
 load 
 curl -O $fack
 clear
-fi 
 echo 
-if [ $mana = 0 ] [ $mana="0" ]
+;;
+("0")
 sleep 5
 echo "terimakasih Telah Menggunakan Tools Ini-_-"
 clear
-fi
 echo
+esac
