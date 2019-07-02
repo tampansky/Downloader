@@ -28,15 +28,7 @@ install(){
     sleep 1
     clear
     pkg install curl
-    clear
-    sleep 1
-    termux-setup-storage
-    sleep 1
-    cd storage
-    sleep 1
-    git clone https://github.com/tampansky/Downloader
-    sleep 0.25
-    ls
+    load
 }
 #load  
 load(){
