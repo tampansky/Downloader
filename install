@@ -27,3 +27,4 @@ install(){
     pkg install curl
 }
 install
+bash setup
