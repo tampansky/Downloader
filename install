@@ -1,0 +1,9 @@
+install(){
+    echo -e $okegreen "[!] Menginstall Wget [!]"
+    pkg install wget
+    sleep 1
+    clear
+    echo -e $okegreen "[!] Menginstall CUrl [!]"
+    pkg install curl
+}
+install
